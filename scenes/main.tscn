@@ -26,7 +26,7 @@ environment = ExtResource("1_q8fpv")
 crosshair = NodePath("../HUD/Crosshair")
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
+transform = Transform3D(-0.352345, -0.935811, -0.010492, -0.0129285, 0.016077, -0.999787, 0.935781, -0.352135, -0.0177634, 0, 5.34615, 0)
 shadow_enabled = true
 shadow_opacity = 0.75
 
