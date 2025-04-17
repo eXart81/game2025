@@ -16,7 +16,7 @@ radiance_size = 0
 
 [resource]
 background_mode = 2
-background_color = Color(0.360784, 0.392157, 0.462745, 1)
+background_color = Color(0.662724, 0.00203112, 0.579338, 1)
 sky = SubResource("Sky_7bk1c")
 ambient_light_source = 2
 ambient_light_color = Color(0.662745, 0.694118, 0.772549, 1)
