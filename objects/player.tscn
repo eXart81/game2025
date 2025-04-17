@@ -55,6 +55,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.75, -6)
 layers = 2
 sprite_frames = ExtResource("4_m6ukc")
 frame = 2
+frame_progress = 1.0
 
 [node name="RayCast" type="RayCast3D" parent="Head/Camera"]
 exclude_parent = false

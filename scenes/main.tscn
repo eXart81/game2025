@@ -21,6 +21,19 @@ sky_material = SubResource("PanoramaSkyMaterial_ya4ey")
 background_mode = 2
 sky = SubResource("Sky_eb6dy")
 sky_rotation = Vector3(0.457276, 0, 2.05949)
+ssao_enabled = true
+ssao_radius = 2.0
+ssao_power = 2.7991
+glow_enabled = true
+glow_intensity = 0.1
+glow_bloom = 0.1
+glow_hdr_threshold = 4.0
+glow_hdr_scale = 4.0
+glow_hdr_luminance_cap = 20.0
+fog_mode = 1
+fog_density = 1.0
+fog_depth_curve = 2.54912
+volumetric_fog_density = 0.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_fpmwk"]
 font = ExtResource("3_w27de")
