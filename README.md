@@ -1,6 +1,6 @@
 gtuydre(ytfyugtr<p align="center"><img src="icon.png"/></p>
 
-# Salut la team ça va, oui
+# BAHAHHHAA WILLIAM IL EST PD
 
 This package includes a basic template for a first person shooter in Godot 4.3 (stable). Includes features like;
 
