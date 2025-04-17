@@ -1,11 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2g78tpqbyf5g"]
+[gd_scene load_steps=9 format=3 uid="uid://d2g78tpqbyf5g"]
 
 [ext_resource type="PackedScene" uid="uid://lde2xq3vq635" path="res://models/enemy-flying.glb" id="1_3v8nl"]
 [ext_resource type="Script" uid="uid://ccgdq4mwnyuwc" path="res://objects/enemy.gd" id="1_jg24b"]
 [ext_resource type="SpriteFrames" uid="uid://dbv3sy5qjatnl" path="res://sprites/burst_animation.tres" id="3_iblw5"]
+[ext_resource type="Texture2D" uid="uid://ccpreelxceour" path="res://takizawa.jpg" id="4_we7g8"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_iix87"]
 radius = 0.75
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_41oev"]
+albedo_texture = ExtResource("4_we7g8")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_41oev"]
+lifetime_randomness = 1.0
+
+[sub_resource type="TorusMesh" id="TorusMesh_we7g8"]
 
 [node name="enemy-flying" type="Area3D"]
 script = ExtResource("1_jg24b")
@@ -32,5 +41,10 @@ frame = 2
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.25
 autostart = true
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+material_override = SubResource("StandardMaterial3D_41oev")
+process_material = SubResource("ParticleProcessMaterial_41oev")
+draw_pass_1 = SubResource("TorusMesh_we7g8")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
