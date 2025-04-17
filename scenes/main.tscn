@@ -20,6 +20,7 @@ sky_material = SubResource("PanoramaSkyMaterial_ya4ey")
 [sub_resource type="Environment" id="Environment_trceg"]
 background_mode = 2
 sky = SubResource("Sky_eb6dy")
+sky_rotation = Vector3(0.457276, 0, 2.05949)
 
 [sub_resource type="LabelSettings" id="LabelSettings_fpmwk"]
 font = ExtResource("3_w27de")
